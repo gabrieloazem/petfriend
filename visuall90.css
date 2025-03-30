@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 40%;
+    height: 100%;
+    float: left;
+    display: none;
+}
+
+form{
+    background: white;
+    border: solid 2px rgb(230, 225, 225);
+    border-radius: 10px;
+    width: 80%;
+    padding: 5% 5%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    float: left;
+}
+
+form h1{
+    font-size: 1.5rem;
+    color: brown;
+    margin: 0;
+    text-align: center;
+}
+
+form h2{
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    color: rgb(80, 73, 73);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+form input[type=email], input[type=password] {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    background: brown;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0; 
+}
+
+#registrar{
+    border: 1px solid brown;
+    background-color: white;
+}
+
+a{
+    color: brown;
+    text-decoration: none;
+}
+
+#cadastro{
+    display: none;
+    gap:0.1rem;
+}
+
+@media ( min-width: 640px ) and ( min-height: 280px) {
+    form{
+        margin: 1rem 0;
+    }
+    form h1{
+        margin-top: 1rem;
+    }
+    #cadastro h2{ 
+        margin-bottom: 3rem;
+    }
+    body{
+        flex-direction: column;
+        justify-content: initial;
+        overflow-y: scroll;
+    }
+}
+
+@media ( min-width: 1024px ) {
+    body{
+        flex-direction: row;
+    }
+    img{
+        display: block;
+    }
+    form{
+        border: none;
+        width: 58%;
+        padding: 0% 1%;
+        justify-content: center;
+    }
+    form h1{
+        font-size: 2rem;
+    }
+}

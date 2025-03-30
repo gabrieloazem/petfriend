@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> Pet Friend </title>
+        <meta charset = "UTF-8"/>
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href="visuall90.css">
+    </head>
+
+    <img src="imagens/wallpaper.jpg">
+
+    <form id = "login">
+        <h1> Bem vindo ao Pet Friend </h1>
+        <h2> Salvando vidas desde 1997 </h2>
+        <label><b> Email</b></label>
+        <input type="email" id = "loginEmail" placeholder="Informe seu email" required>
+
+        <label><b> Senha </b></label>
+        <input type="password" id = "loginSenha" placeholder="Informe sua senha" required>
+    
+        <button type="submit" id = "acessarr" onclick="logar()"> Login </button>
+        <button id = "registrar" onclick="paginaCadastro()"> <a href = '#'> Cadastre-se </a> </button>    
+    </form>
+
+    <form id = "cadastro">
+        <h1> Cadastre-se no Pet Friend </h1>
+        <h2> Salvando vidas desde 1997 </h2>
+        <label><b> Email</b></label>
+        <input type="email" id = "cadastroEmail" placeholder="Informe um email" required>
+
+        <label><b> Senha </b></label>
+        <input type="password" id = "cadastroSenha1" placeholder="Informe uma senha" required>
+
+        <label><b> Repetir senha </b></label>
+        <input type="password" id = "cadastroSenha2" placeholder="Repita sua senha" required>
+    
+        <button type="submit" id = "cadastrar" onclick="cadastrarrr()"> Cadastrar </button> 
+        <button id = "registrar" onclick="paginaLogin()">  <a href = '#'> Já possuo cadastro </a> </button>    
+    </form>
+
+    <body>
+        <script src = "main90.js"> </script>
+    </body>
+    
+</html>
